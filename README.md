@@ -194,7 +194,9 @@ docker push <docker-hub-username>/<docker-image-name>
 ```
 Finally, we are finished with pushing our docker image to dockerhub, now this image is publicly available and can be used by Akash for deployment purposes.
 
- # Deploying Your Application on Akash-Cloud:
+
+  
+# Deploying Your Application on Akash-Cloud:
 
 After containerizing your application, deploying to Akash simply involves writing small configuration file and executing a couple of commands.Follow the below steps to successfully deploy your application on Akash:
 
