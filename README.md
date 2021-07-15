@@ -1,5 +1,5 @@
 # Sovryn-Node-on-Akash
-Running Sovryn Node on Akash Cloud
+<b>Running Sovryn Node on Akash Cloud, you find my node on : <a href="http://io375ka6dldvb3drt7do4s1q78.ingress.sjc1p0.mainnet.akashian.io/">SovrynNode</a></b>
 
 
 # Sovryn Node:
@@ -26,6 +26,7 @@ Akash is an open source Cloud platform that lets you quickly deploy a Docker con
 # To deploy Sovryn node locally we need to follow some simple steps:
    * <b>Pre-requistes:</b>
      1) <b>NodeJs > 12.1</b>
+        * You can find how to install nodejs here: https://nodejs.org/en/download/ 
      2) <b>Nodemon</b>
      3) <b>Webpack</b>
      4) <b>Prepare Wallets with Funds:</b>
@@ -102,6 +103,19 @@ ks = encrypted keystore file in v3 standard.(alternatively, you can specify pKey
    ```
    node -r esm start.js test
    ```
+   <b><b><b>OR</b></b></b>
+ 
+ * <b>If you dont want to build everything, from scratch clone this github repo:</b>
+   ```
+   git clone https://github.com/TanishqDsharma/SovrynNode-on-Akash
+   cd SovrynNode-on-Akash
+   ```
+   <b>After moving into the cloned repository, just run the below command:</b>
+   ```
+   node -r esm start.js test
+   ```
+   <b>Note: For the above command to work you have to set your private keys and account addresses in accounts.js file which you can find in secrets folder.</b>
+ 
 #  Containerizing Your Application:
 
 Now,To deploy our application on Akash, we need to first containerize it. To containerize your application follow the below steps:
@@ -151,9 +165,9 @@ CMD ["sh", "-c", "npm run start:${WHICHNET}"]
   
   The above command will create a docker image with the name you provide above
   
-* <b>To test your image execute the below command</b>
+* <b>To test your image execute the below command:</b>
    
-   ``` <b> docker run -p 3000:3000 <docker-image-name> </b> ```
+   ``` docker run -p 3000:3000 <docker-image-name> ```
   
 ## PUSH IMAGE TO DOCKERHUB:
 
