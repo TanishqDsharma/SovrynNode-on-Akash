@@ -194,6 +194,10 @@ docker push <docker-hub-username>/<docker-image-name>
 ```
 Finally, we are finished with pushing our docker image to dockerhub, now this image is publicly available and can be used by Akash for deployment purposes.
 
+<b>Note</b>:
+  * <b>If you want a guide of docker steps with screenshots of the commands executed in terminal you can find it here:</b>
+    * <a href="https://github.com/TanishqDsharma/SovrynNode-on-Akash/blob/main/docker_steps.md">DockerStepsGuide</a>
+
 
   
 # Deploying Your Application on Akash-Cloud:
