@@ -1,0 +1,48 @@
+---
+version: "2.0"
+
+services:
+  web:
+    image: tanishq512/sovryn:1
+    env:
+      - WHICHNET=test
+      - LIQUIDATOR_ADDRESS="0x95Af93a95D86115A1E73C6040c7703363B29a89F"
+      - LIQUIDATOR_PRIVATE_KEY="3093ee0ee0ee1bf6b88bbbaa18ba7b7a3a5049ae3a1457e2cd4b714e99c277c5"
+      - ROLLOVER_ADDRESS="0xEeF9B9e162471553D1936afEE12a9C8fC7Bfb431"
+      - ROLLOVER_PRIVATE_KEY= "bafdcb29d82f428ab5f6ac50eeef961b9c320fb4b7232c1efc1a16c5971e0719"
+      - ARBITRAGE_ADDRESS="0xd230D48ABB784C022687387596C85D1C2467Cb9d"
+      - ARBITRAGE_PRIVATE_KEY="c6b959d41eb9d2e4c4fa4e1226d61526f6fca33c8f0d8786627f91a92b0e8de4"
+         
+    expose:
+      - port: 3000
+        as: 80
+        to:
+          - global: true
+
+profiles:
+  compute:
+    web:
+      resources:
+        cpu:
+          units: 0.1
+        memory:
+          size: 512Mi
+        storage:
+          size: 512Mi
+  placement:
+    westcoast:
+      attributes:
+        host: akash
+      signedBy:
+        anyOf:
+          - "akash1365yvmc4s7awdyj3n2sav7xfx76adc6dnmlx63"
+      pricing:
+        web: 
+          denom: uakt
+          amount: 1000
+
+deployment:
+  web:
+    westcoast:
+      profile: web
+      count: 1
