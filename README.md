@@ -110,11 +110,22 @@ ks = encrypted keystore file in v3 standard.(alternatively, you can specify pKey
    git clone https://github.com/TanishqDsharma/SovrynNode-on-Akash
    cd SovrynNode-on-Akash
    ```
-   <b>After moving into the cloned repository, just run the below command:</b>
+   The above commands will have an output like this:
+   ![alt text](https://github.com/TanishqDsharma/SovrynNode-on-Akash/blob/main/screenshots/1.png)
+   
+   <b>After moving into the cloned repository, navigate to secrets folder and in accounts.js file, set your private key and account address for liquidator, rollover and arbitrage:</b>
+   
+   ![alt text](https://github.com/TanishqDsharma/SovrynNode-on-Akash/blob/main/screenshots/2.png)
+   
+   After setting up your keys and account addresses in accounts.js file, just run the below command
    ```
    node -r esm start.js test
    ```
-   <b>Note: For the above command to work you have to set your private keys and account addresses in accounts.js file which you can find in secrets folder.</b>
+   The above commands will have an output like this:
+
+   ![alt text](https://github.com/TanishqDsharma/SovrynNode-on-Akash/blob/main/screenshots/3.png)
+   
+   Now , in web browser navigate to http://127.0.0.1:3000 you will have the sovryn node running locally.
  
 #  Containerizing Your Application:
 
