@@ -79,16 +79,16 @@ ks = encrypted keystore file in v3 standard.(alternatively, you can specify pKey
 }
 ```
    * <b>To receive notifications on telegram about new transactions and errors create a telegram bot-token-id and write in in a file:</b>   /secrets/telegram.js
-   * Write this in your telegram.js file if you want to receive notifications on telegram and make sure you do provide the telegram-bot-token
+      * Write this in your telegram.js file if you want to receive notifications on telegram and make sure you do provide the telegram-bot-token id which you can get by creating a bot in your telegram account
      
-     ```
-     export default "[telegram-bot-token]";
-     ```
-   * Write this in your telegram.js file if you do not want to receive notifications on telegram 
+      ```
+      export default "[telegram-bot-token]";
+      ```
+      * Write this in your telegram.js file if you do not want to receive notifications on telegram 
      
-     ```
-     export default ""; 
-     ```
+      ```
+      export default ""; 
+      ```
   
   * <b>Charge the Sovryn node wallets with all relevant tokens and enough Rbtc to cover tx cost, and you do that my visiting the below faucets:</b>
     * https://faucet.rsk.co/ 
@@ -129,7 +129,7 @@ ks = encrypted keystore file in v3 standard.(alternatively, you can specify pKey
  
 #  Containerizing Your Application:
 
-Now,To deploy our application on Akash, we need to first containerize it. To containerize your application follow the below steps:
+Now,To Run your Sovryn Node  on Akash, we need to first containerize it. To containerize your application follow the below steps:
 
 <b>To containerize your application follow the below steps:</b>
 * Inside your Application Directory <b>"Create a DockerFile"</b> 
@@ -302,7 +302,7 @@ deployment:
 
 * Note: Make sure to change the image according to your docker image in deploy.yml file.
   * image: USERNAME/DOCKERIMAGE
-  * In our case it is: tanishq512/email-image1:2
+  * In my case it was: tanishq512/sovryn:latest
 
 
 ## Create a certificate: 
@@ -581,7 +581,7 @@ pagination:
 }
 ```
 
-* <b>Since we got the URL from the above result, we can access the application at:</b>
+* <b>Since we got the URL from the above result, we can access the Sovryn Node at:</b>
   
   ```
   http://io375ka6dldvb3drt7do4s1q78.ingress.sjc1p0.mainnet.akashian.io/
@@ -590,7 +590,7 @@ pagination:
 
 
 # Conclusion:
-  * I have successfully deployed my application on akash just by following the above steps
-  * <b>My application link: </b>http://io375ka6dldvb3drt7do4s1q78.ingress.sjc1p0.mainnet.akashian.io/
+  * I have successfully deployed Sovryn Node on akash just by following the above steps
+  * <b>My Sovryn Node link: </b>http://io375ka6dldvb3drt7do4s1q78.ingress.sjc1p0.mainnet.akashian.io/
   * For futher guidance to deploy your application on Akash you can follow Akash docs for beginners: https://docs.akash.network/guides/deployment
 
