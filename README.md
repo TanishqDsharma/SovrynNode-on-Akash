@@ -31,9 +31,18 @@ Akash is an open source Cloud platform that lets you quickly deploy a Docker con
      3) <b>Webpack</b>
      4) <b>Prepare Wallets with Funds:</b>
         * We need to create 3 Wallets 1 liquidator wallet, 1 rollover wallet and 1 arbitrage wallet.You can simple create three metamask wallets and assign there address and private keys accordingly for each role.
-        * To create a wallet using metamask sovryn has a good guide: https://wiki.sovryn.app/en/getting-started/wallet-setup-videos
+        * To create a wallet using metamask for sovryn tesnet:
+          * Go visit metamask website:https://metamask.io/
+          * The there click on "Download button" and add metamask extension according to your browser(Supported browsers are: Firefox, Chrome, Brave and Edge). 
+          * Open the metamask extension and create an account for yourself 
+          * Now, navigate to Settings-> Networks and Click on the "Add Network" button and enter the below RSK Testnet Network settings:
+            * <b>Network Name:</b> RSK Testnet
+            * <b>New RPC URL:</b> https://public-node.testnet.rsk.co
+            * <b>Chain ID:</b> 31
+            * <b>Currency Symbol:</b> tRBTC
+            * <b>Block Explorer URL:</b> https://explorer.testnet.rsk.co 
         * Since we will be doing everything on testnet 
-          * <b>You can top-up your wallets with doc and WRBTC from:</b> https://faucet.sovryn.app/ , 
+          * <b>You can top-up your wallets with doc, WRBTC and RBTC from:</b> https://faucet.sovryn.app/ , 
           * <b>You can top-up your wallets with TRBTC from:</b> https://faucet.rsk.co/  
           * <b>Access the sovryn test net DAPP from:</b> https://test.sovryn.app/
  
