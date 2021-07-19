@@ -34,7 +34,10 @@ Akash is an open source Cloud platform that lets you quickly deploy a Docker con
         * To create a wallet using metamask for sovryn tesnet:
           * Go visit metamask website:https://metamask.io/
           * The there click on "Download button" and add metamask extension according to your browser(Supported browsers are: Firefox, Chrome, Brave and Edge). 
-          * Open the metamask extension and create an account for yourself 
+          * Open the metamask extension and create an account for yourself
+             * Follow my guide on creating wallet on metamask:<a href="https://github.com/TanishqDsharma/SovrynNode-on-Akash/blob/main/Metamask_wallet_setup_Guide.md">Wallet-Setup-Guide</a>
+             * You can also follow sovryn guide to create wallet on metamask:
+                * https://wiki.sovryn.app/en/getting-started/wallet-setup  
           * Now, navigate to Settings-> Networks and Click on the "Add Network" button and enter the below RSK Testnet Network settings:
             * <b>Network Name:</b> RSK Testnet
             * <b>New RPC URL:</b> https://public-node.testnet.rsk.co
