@@ -219,7 +219,7 @@ After containerizing your application, deploying to Akash simply involves writin
     
     In terminal execute the below command
     ```
-    export AKASH_KEY_NAME=TanishqWallet 
+    AKASH_KEY_NAME=TanishqWallet 
     
     ```
 
