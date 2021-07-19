@@ -84,6 +84,8 @@ ks = encrypted keystore file in v3 standard.(alternatively, you can specify pKey
       ```
       export default "[telegram-bot-token]";
       ```
+      
+      <b> OR </b>
       * Write this in your telegram.js file if you do not want to receive notifications on telegram 
      
       ```
