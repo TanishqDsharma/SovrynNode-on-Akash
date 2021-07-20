@@ -105,8 +105,8 @@ ks = encrypted keystore file in v3 standard.(alternatively, you can specify pKey
       ```
   
   7) <b>Charge the Sovryn node wallets with all relevant tokens and enough Rbtc to cover tx cost, and you do that my visiting the below faucets:</b>
-    * https://faucet.rsk.co/ 
-    * https://faucet.sovryn.app/ 
+      * https://faucet.rsk.co/ 
+      * https://faucet.sovryn.app/ 
 
  8) <b>To approve the Sovryn smart contract to spend Doc on behalf of the Sovryn node wallets as well as the swap network contract to spend tokens on behalf of the arbitrage wallet, execute the below command:</b>
     ```
