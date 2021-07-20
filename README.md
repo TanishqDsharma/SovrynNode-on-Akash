@@ -50,27 +50,27 @@ Akash is an open source Cloud platform that lets you quickly deploy a Docker con
           * <b>Access the sovryn test net DAPP from:</b> https://test.sovryn.app/
  
       
-   * <b>The very first step is to clone the github repo,run the below commands in your terminal.</b> 
-     ```
-     git clone https://github.com/DistributedCollective/Sovryn-Node.git
-     cd Sovryn-Node
-     ```
-   * <b>Now we need to run the below commands to install dependencies:</b>
-     ```
-     npm install
-     npm install -g nodemon mocha
-     ```
-   * <b>To run the build client:</b>
-     ```
-     npm run build-client
-     ```
+   1) <b>The very first step is to clone the github repo,run the below commands in your terminal.</b> 
+      ```
+      git clone https://github.com/DistributedCollective/Sovryn-Node.git
+      cd Sovryn-Node
+      ```
+   2) <b>Now we need to run the below commands to install dependencies:</b>
+      ```
+      npm install
+      npm install -g nodemon mocha
+      ```
+   3) <b>To run the build client:</b>
+      ```
+      npm run build-client
+      ```
    
-   * <b>Create empty directories "logs" and "db" in the project root, run the below commands to create empty directories in your project root:</b>
-     ```
-     mkdir logs
-     mkdir db
-     ```
-   * <b>Create directory "secrets" and within a file accounts.js with the credentials of the liquidator/rollover/arbitrage wallets
+   4) <b>Create empty directories "logs" and "db" in the project root, run the below commands to create empty directories in your project root:</b>
+      ```
+      mkdir logs
+      mkdir db
+      ```
+   5) <b>Create directory "secrets" and within a file accounts.js with the credentials of the liquidator/rollover/arbitrage wallets
 ks = encrypted keystore file in v3 standard.(alternatively, you can specify pKey instead of ks to just use the private key).</b>
     
 <b>Note:I used private keys instead of keystore for the deployment of sovryn node,you can use keystore.</b>
@@ -90,7 +90,7 @@ ks = encrypted keystore file in v3 standard.(alternatively, you can specify pKey
     }],
 }
 ```
-   * <b>To receive notifications on telegram about new transactions and errors create a telegram bot-token-id and write in in a file:</b>   /secrets/telegram.js
+   6) <b>To receive notifications on telegram about new transactions and errors create a telegram bot-token-id and write in in a file:</b>   /secrets/telegram.js
       * Write this in your telegram.js file if you want to receive notifications on telegram and make sure you do provide the telegram-bot-token id which you can get by creating a bot in your telegram account
      
       ```
@@ -104,20 +104,20 @@ ks = encrypted keystore file in v3 standard.(alternatively, you can specify pKey
       export default ""; 
       ```
   
-  * <b>Charge the Sovryn node wallets with all relevant tokens and enough Rbtc to cover tx cost, and you do that my visiting the below faucets:</b>
+  7) <b>Charge the Sovryn node wallets with all relevant tokens and enough Rbtc to cover tx cost, and you do that my visiting the below faucets:</b>
     * https://faucet.rsk.co/ 
     * https://faucet.sovryn.app/ 
 
- * <b>To approve the Sovryn smart contract to spend Doc on behalf of the Sovryn node wallets as well as the swap network contract to spend tokens on behalf of the arbitrage wallet, execute the below command:</b>
+ 8) <b>To approve the Sovryn smart contract to spend Doc on behalf of the Sovryn node wallets as well as the swap network contract to spend tokens on behalf of the arbitrage wallet, execute the below command:</b>
     ```
     node -r esm util/approval.js
     ```
  
- * <b>After this you can finally start your Sovryn node by executing the below command:</b>
-   ```
-   node -r esm start.js test
-   ```
-   <b><b><b>OR</b></b></b>
+ 9) <b>After this you can finally start your Sovryn node by executing the below command:</b>
+    ```
+    node -r esm start.js test
+    ```
+    <b><b><b>OR</b></b></b>
  
  * <b>If you dont want to build everything, from scratch clone this github repo:</b>
    ```
