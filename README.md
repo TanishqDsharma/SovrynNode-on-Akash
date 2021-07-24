@@ -1,5 +1,4 @@
 # Guide for Deploying Sovryn Node on Akash:
-<b>Running Sovryn Node on Akash Cloud, you find my node on : <a href="http://io375ka6dldvb3drt7do4s1q78.ingress.sjc1p0.mainnet.akashian.io/">SovrynNode</a></b>
 
 
 # Sovryn Node:
