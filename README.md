@@ -49,7 +49,9 @@ Akash is an open source Cloud platform that lets you quickly deploy a Docker con
           * <b>Access the sovryn test net DAPP from:</b> https://test.sovryn.app/
  
       
-   1) <b>The very first step is to clone the github repo,run the below commands in your terminal.</b> 
+   1) <b>The very first step is to clone the Sovryn Node github repo,run the below commands in your terminal.</b>
+      
+      <b>Sovryn Github Repo :</b> https://github.com/DistributedCollective/Sovryn-Node 
       ```
       git clone https://github.com/DistributedCollective/Sovryn-Node.git
       cd Sovryn-Node
@@ -89,7 +91,8 @@ ks = encrypted keystore file in v3 standard.(alternatively, you can specify pKey
     }],
 }
 ```
-   6) <b>To receive notifications on telegram about new transactions and errors create a telegram bot-token-id and write in in a file:</b>   /secrets/telegram.js
+   6) <Note:This is an optional step:> 
+      <b>To receive notifications on telegram about new transactions and errors create a telegram bot-token-id and write in in a file:</b>   /secrets/telegram.js
       * Write this in your telegram.js file if you want to receive notifications on telegram and make sure you do provide the telegram-bot-token id which you can get by creating a bot in your telegram account
      
       ```
@@ -123,8 +126,11 @@ ks = encrypted keystore file in v3 standard.(alternatively, you can specify pKey
    git clone https://github.com/TanishqDsharma/SovrynNode-on-Akash
    cd SovrynNode-on-Akash
    ```
-   The above commands will have an output like this:
-   ![alt text](https://github.com/TanishqDsharma/SovrynNode-on-Akash/blob/main/screenshots/1.png)
+   The above commands screenshot when ran in terminal:
+   ![alt text](https://github.com/TanishqDsharma/SovrynNode-on-Akash/blob/main/screenshots/g1.png)
+   
+   ![alt text](https://github.com/TanishqDsharma/SovrynNode-on-Akash/blob/main/screenshots/g2.png)
+
    
    <b>After moving into the cloned repository, navigate to secrets folder and in accounts.js file, set your private key and account address for liquidator, rollover and arbitrage:</b>
    
@@ -132,11 +138,15 @@ ks = encrypted keystore file in v3 standard.(alternatively, you can specify pKey
    
    After setting up your keys and account addresses in accounts.js file, just run the below command
    ```
+   node -r esm util/approval.js test
    node -r esm start.js test
    ```
-   The above commands will have an output like this:
+   The above commands screenshot when ran in terminal:
 
-   ![alt text](https://github.com/TanishqDsharma/SovrynNode-on-Akash/blob/main/screenshots/3.png)
+   ![alt text](https://github.com/TanishqDsharma/SovrynNode-on-Akash/blob/main/screenshots/g3.png)
+   
+   ![alt text](https://github.com/TanishqDsharma/SovrynNode-on-Akash/blob/main/screenshots/g5.png)
+
    
    Now , in web browser navigate to http://127.0.0.1:3000 you will have the sovryn node running locally.
  
