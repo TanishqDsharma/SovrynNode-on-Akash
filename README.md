@@ -207,7 +207,7 @@ CMD ["sh", "-c", "npm run start:${WHICHNET}"]
 
 After creating the docker image we need to make it publicly available so that it can be used with Akash Cloud.So, to push the docker image follow the below steps:
 
-* The above command would have created a container id, to view the container id issue the command: <b><b>docker ps -a</b></b> and check the container id corresponding to the image name <b><your-docker-image-name></b>
+* The above command would have created a container id, to view the container id issue the command: <b><b>docker ps -a</b></b> and check the container id corresponding to the image name <b><your-docker-image-name></b> and copy it as you will be needing it in the next step.
  
 * Now Use the below commands to create a new image from exisiting container and push it to the docker hub
 
