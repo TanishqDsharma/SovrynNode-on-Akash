@@ -629,5 +629,5 @@ pagination:
 # Conclusion:
   * I have successfully deployed Sovryn Node on akash just by following the above steps
   * <b>My Sovryn Node link: </b>http://io375ka6dldvb3drt7do4s1q78.ingress.sjc1p0.mainnet.akashian.io/
-  * For futher guidance to deploy your application on Akash you can follow Akash docs for beginners: https://docs.akash.network/guides/deployment
+
 
