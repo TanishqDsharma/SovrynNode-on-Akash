@@ -29,7 +29,7 @@ Akash is an open source Cloud platform that lets you quickly deploy a Docker con
      2) <b>Nodemon</b>
      3) <b>Webpack</b>
      4) <b>Prepare Wallets with Funds:</b>
-        * We need to create 3 Wallets 1 liquidator wallet, 1 rollover wallet and 1 arbitrage wallet.You can simple create three metamask wallets and assign there address and private keys accordingly for each role.
+        * We need to create 3 Wallets 1 liquidator wallet, 1 rollover wallet and 1 arbitrage wallet.You can simply create three metamask wallets and assign there address and private keys accordingly for each role.
         * To create a wallet using metamask for sovryn tesnet:
           * Go visit metamask website:https://metamask.io/
           * The there click on "Download button" and add metamask extension according to your browser(Supported browsers are: Firefox, Chrome, Brave and Edge). 
