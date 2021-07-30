@@ -199,6 +199,8 @@ CMD ["sh", "-c", "npm run start:${WHICHNET}"]
   docker build -t <docker-image-name-here> .   
   ```
   
+  ![alt text](https://github.com/TanishqDsharma/SovrynNode-on-Akash/blob/main/screenshots/d1.png)
+  
   The above command will create a docker image with the name you provide above
   
 * <b>To test your image execute the below command:</b>
@@ -206,26 +208,34 @@ CMD ["sh", "-c", "npm run start:${WHICHNET}"]
    ``` 
    docker run -p 3000:3000 <docker-image-name> 
    ```
+   
+   ![alt text](https://github.com/TanishqDsharma/SovrynNode-on-Akash/blob/main/screenshots/d2.png)
+
   
 ## PUSH IMAGE TO DOCKERHUB:
 
 After creating the docker image we need to make it publicly available so that it can be used with Akash Cloud.So, to push the docker image follow the below steps:
 
 * The above command would have created a container id, to view the container id issue the command: <b><b>docker ps -a</b></b> and check the <b>container id</b> corresponding to the image name <b><your-docker-image-name></b> and copy it as you will be needing it in the next step.
+  ```
+  docker ps -a
+  ```
+  
+  ![alt text](https://github.com/TanishqDsharma/SovrynNode-on-Akash/blob/main/screenshots/d3.png)
+
+  
  
 * Now Use the below commands to create a new image from exisiting container and push it to the docker hub
 
-```
-docker commit container-id <docker-hub-username>/<docker-image-name>
-docker push <docker-hub-username>/<docker-image-name>
-```
-Finally, we are finished with pushing our docker image to dockerhub, now this image is publicly available and can be used by Akash for deployment purposes.
-
-<b>Note</b>:
-  * <b>If you want a guide of docker steps with screenshots of the commands executed in terminal you can find it here:</b>
-    * <a href="https://github.com/TanishqDsharma/SovrynNode-on-Akash/blob/main/docker_steps.md">DockerStepsGuide</a>
+  ```
+  docker commit container-id <docker-hub-username>/<docker-image-name>
+  docker push <docker-hub-username>/<docker-image-name>
+  ```
+  
+  ![alt text](https://github.com/TanishqDsharma/SovrynNode-on-Akash/blob/main/screenshots/d4.png)
 
 
+<b>Finally, we are finished with pushing our docker image to dockerhub, now this image is publicly available and can be used by Akash for deployment purposes.</b>
   
 # Deploying Your Application on Akash-Cloud:
 
