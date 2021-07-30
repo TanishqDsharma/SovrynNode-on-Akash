@@ -232,7 +232,7 @@ After creating the docker image we need to make it publicly available so that it
   docker push <docker-hub-username>/<docker-image-name>
   ```
   
-  ![alt text](https://github.com/TanishqDsharma/SovrynNode-on-Akash/blob/main/screenshots/d4.png)
+  ![alt text](https://github.com/TanishqDsharma/SovrynNode-on-Akash/blob/main/screenshots/d4%2Cpng.png)
 
 
 <b>Finally, we are finished with pushing our docker image to dockerhub, now this image is publicly available and can be used by Akash for deployment purposes.</b>
