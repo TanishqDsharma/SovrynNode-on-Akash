@@ -195,13 +195,17 @@ CMD ["sh", "-c", "npm run start:${WHICHNET}"]
 
 * <b>To build the image execute the below command:</b>
 
-  ``` docker build -t <docker-image-name-here> .   ```
+  ``` 
+  docker build -t <docker-image-name-here> .   
+  ```
   
   The above command will create a docker image with the name you provide above
   
 * <b>To test your image execute the below command:</b>
    
-   ``` docker run -p 3000:3000 <docker-image-name> ```
+   ``` 
+   docker run -p 3000:3000 <docker-image-name> 
+   ```
   
 ## PUSH IMAGE TO DOCKERHUB:
 
